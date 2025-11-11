@@ -4,18 +4,13 @@
 #include "Person.h"
 #include <string>
 #using namespace std;
-//#write student class here
 
-
-
-
-
-
-
-
-
-
-
-
-
+class Student : public Person{
+  int yearLevel;
+  string major;
+  public:
+  void display(){
+    cout<<"Year lvl: "<<yearLevel<<endl<<"Major: "<<major<<endl;
+  }
+};
 #endif
