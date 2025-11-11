@@ -4,11 +4,19 @@
 #include <string>
 using namespace std;
 class Person{
-  string name;
-  int id;
-  public:
-  void display(){
-    cout<<"Name: "<<name<<endl<<"ID: "<<id<<endl;
-  }
+    string name;
+    int id;
+    public:
+    Person(){
+        name = "";
+        id = -1;
+    }
+    Person(string n, int i){
+        name = n;
+        id = i;
+    }
+    ~Person(){
+    }
+    void display();
 };
 #endif
