@@ -4,11 +4,19 @@
 #include "Person.h"
 using namespace std;
 class Instructor : public Person{
-  string department;
-  int experienceYears;
-  public:
-  void display(){
-    cout<<"Department: "<<department<<endl<<"Exp years: "<<experienceYears<<endl;
-  }
+    string department;
+    int experienceYears;
+    public:
+    Instructor(){
+        department = "";
+        experienceYears = 0;
+    }
+    Instructor(string d, int e){
+        department = d;
+        experienceYears = e;
+    }
+    ~Instructor(){
+    }
+    void display();
 };
 #endif
