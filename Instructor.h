@@ -3,17 +3,12 @@
 
 #include "Person.h"
 using namespace std;
-//#write Instructor class here
-
-
-
-
-
-
-
-
-
-
-
-
+class Instructor : public Person{
+  string department;
+  int experienceYears;
+  public:
+  void display(){
+    cout<<"Department: "<<department<<endl<<"Exp years: "<<experienceYears<<endl;
+  }
+};
 #endif
