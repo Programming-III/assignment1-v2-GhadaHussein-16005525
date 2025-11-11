@@ -9,8 +9,16 @@ class Student : public Person{
   int yearLevel;
   string major;
   public:
-  void display(){
-    cout<<"Year lvl: "<<yearLevel<<endl<<"Major: "<<major<<endl;
+  Student(){
+    yearLevel = 0;
+    major = "";
   }
+  Student(int year, string m){
+    yearLevel = year;
+    major = m;
+  }
+  ~Student(){
+  }
+  void display();
 };
 #endif
