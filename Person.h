@@ -3,18 +3,12 @@
 
 #include <string>
 using namespace std;
-
-//#write Person class here
-
-
-
-
-
-
-
-
-
-
-
-
+class Person{
+  string name;
+  int id;
+  public:
+  void display(){
+    cout<<"Name: "<<name<<endl<<"ID: "<<id<<endl;
+  }
+};
 #endif
